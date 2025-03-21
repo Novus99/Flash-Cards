@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7728FC172D8CD2A7008B1EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC0B2D8CD2A7008B1EAA /* AppDelegate.swift */; };
+		7728FC182D8CD2A7008B1EAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC102D8CD2A7008B1EAA /* LoginViewController.swift */; };
+		7728FC192D8CD2A7008B1EAA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC132D8CD2A7008B1EAA /* RegisterViewController.swift */; };
+		7728FC1A2D8CD2A7008B1EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC142D8CD2A7008B1EAA /* SceneDelegate.swift */; };
+		7728FC1B2D8CD2A7008B1EAA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC152D8CD2A7008B1EAA /* WelcomeViewController.swift */; };
+		7728FC1C2D8CD2A7008B1EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7728FC0C2D8CD2A7008B1EAA /* Assets.xcassets */; };
+		7728FC1E2D8CD2A7008B1EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7728FC0F2D8CD2A7008B1EAA /* LaunchScreen.storyboard */; };
+		7728FC1F2D8CD2A7008B1EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7728FC122D8CD2A7008B1EAA /* Main.storyboard */; };
+		7728FC212D8CD2D3008B1EAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC202D8CD2CE008B1EAA /* MainViewController.swift */; };
+		7728FC242D8D73F7008B1EAA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7728FC232D8D73F7008B1EAA /* FirebaseAuth */; };
+		7728FC262D8D73F7008B1EAA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7728FC252D8D73F7008B1EAA /* FirebaseCore */; };
+		7728FC282D8D73F7008B1EAA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7728FC272D8D73F7008B1EAA /* FirebaseStorage */; };
+		7728FC2A2D8D77AE008B1EAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC292D8D77AB008B1EAA /* Constants.swift */; };
+		7728FC2C2D8D7A17008B1EAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7728FC2B2D8D7A17008B1EAA /* GoogleService-Info.plist */; };
+		7728FC312D8D7EAD008B1EAA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC302D8D7EA5008B1EAA /* AuthService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7728FBDA2D8CCDFE008B1EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7728FBBB2D8CCDFC008B1EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7728FBC22D8CCDFC008B1EAA;
+			remoteInfo = "Flash Cards";
+		};
+		7728FBE42D8CCDFE008B1EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7728FBBB2D8CCDFC008B1EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7728FBC22D8CCDFC008B1EAA;
+			remoteInfo = "Flash Cards";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7728FBC32D8CCDFC008B1EAA /* Flash Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7728FBD92D8CCDFE008B1EAA /* Flash CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flash CardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7728FBE32D8CCDFE008B1EAA /* Flash CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flash CardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7728FC0B2D8CD2A7008B1EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7728FC0C2D8CD2A7008B1EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7728FC0D2D8CD2A7008B1EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7728FC0E2D8CD2A7008B1EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7728FC102D8CD2A7008B1EAA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7728FC112D8CD2A7008B1EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7728FC132D8CD2A7008B1EAA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7728FC142D8CD2A7008B1EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7728FC152D8CD2A7008B1EAA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7728FC202D8CD2CE008B1EAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7728FC292D8D77AB008B1EAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7728FC2B2D8D7A17008B1EAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7728FC302D8D7EA5008B1EAA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7728FBDC2D8CCDFE008B1EAA /* Flash CardsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Flash CardsTests";
+			sourceTree = "<group>";
+		};
+		7728FBE62D8CCDFE008B1EAA /* Flash CardsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Flash CardsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7728FBC02D8CCDFC008B1EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7728FC262D8D73F7008B1EAA /* FirebaseCore in Frameworks */,
+				7728FC242D8D73F7008B1EAA /* FirebaseAuth in Frameworks */,
+				7728FC282D8D73F7008B1EAA /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7728FBD62D8CCDFE008B1EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7728FBE02D8CCDFE008B1EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7728FBBA2D8CCDFC008B1EAA = {
+			isa = PBXGroup;
+			children = (
+				7728FC162D8CD2A7008B1EAA /* Flash Cards */,
+				7728FBDC2D8CCDFE008B1EAA /* Flash CardsTests */,
+				7728FBE62D8CCDFE008B1EAA /* Flash CardsUITests */,
+				7728FBC42D8CCDFC008B1EAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7728FBC42D8CCDFC008B1EAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7728FBC32D8CCDFC008B1EAA /* Flash Cards.app */,
+				7728FBD92D8CCDFE008B1EAA /* Flash CardsTests.xctest */,
+				7728FBE32D8CCDFE008B1EAA /* Flash CardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7728FC0A2D8CD2A7008B1EAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7728FC122D8CD2A7008B1EAA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7728FC162D8CD2A7008B1EAA /* Flash Cards */ = {
+			isa = PBXGroup;
+			children = (
+				7728FC2F2D8D7CB9008B1EAA /* Services */,
+				7728FC2E2D8D7C91008B1EAA /* Controllers */,
+				7728FC2D2D8D7C8B008B1EAA /* Models */,
+				7728FC0A2D8CD2A7008B1EAA /* Views */,
+				7728FC0B2D8CD2A7008B1EAA /* AppDelegate.swift */,
+				7728FC0C2D8CD2A7008B1EAA /* Assets.xcassets */,
+				7728FC0D2D8CD2A7008B1EAA /* Info.plist */,
+				7728FC0F2D8CD2A7008B1EAA /* LaunchScreen.storyboard */,
+				7728FC142D8CD2A7008B1EAA /* SceneDelegate.swift */,
+				7728FC2B2D8D7A17008B1EAA /* GoogleService-Info.plist */,
+				7728FC292D8D77AB008B1EAA /* Constants.swift */,
+			);
+			path = "Flash Cards";
+			sourceTree = "<group>";
+		};
+		7728FC2D2D8D7C8B008B1EAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7728FC2E2D8D7C91008B1EAA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7728FC202D8CD2CE008B1EAA /* MainViewController.swift */,
+				7728FC132D8CD2A7008B1EAA /* RegisterViewController.swift */,
+				7728FC152D8CD2A7008B1EAA /* WelcomeViewController.swift */,
+				7728FC102D8CD2A7008B1EAA /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7728FC2F2D8D7CB9008B1EAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7728FC302D8D7EA5008B1EAA /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7728FBC22D8CCDFC008B1EAA /* Flash Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7728FBEC2D8CCDFE008B1EAA /* Build configuration list for PBXNativeTarget "Flash Cards" */;
+			buildPhases = (
+				7728FBBF2D8CCDFC008B1EAA /* Sources */,
+				7728FBC02D8CCDFC008B1EAA /* Frameworks */,
+				7728FBC12D8CCDFC008B1EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flash Cards";
+			packageProductDependencies = (
+				7728FC232D8D73F7008B1EAA /* FirebaseAuth */,
+				7728FC252D8D73F7008B1EAA /* FirebaseCore */,
+				7728FC272D8D73F7008B1EAA /* FirebaseStorage */,
+			);
+			productName = "Flash Cards";
+			productReference = 7728FBC32D8CCDFC008B1EAA /* Flash Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7728FBD82D8CCDFE008B1EAA /* Flash CardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7728FBF12D8CCDFE008B1EAA /* Build configuration list for PBXNativeTarget "Flash CardsTests" */;
+			buildPhases = (
+				7728FBD52D8CCDFE008B1EAA /* Sources */,
+				7728FBD62D8CCDFE008B1EAA /* Frameworks */,
+				7728FBD72D8CCDFE008B1EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7728FBDB2D8CCDFE008B1EAA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7728FBDC2D8CCDFE008B1EAA /* Flash CardsTests */,
+			);
+			name = "Flash CardsTests";
+			packageProductDependencies = (
+			);
+			productName = "Flash CardsTests";
+			productReference = 7728FBD92D8CCDFE008B1EAA /* Flash CardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7728FBE22D8CCDFE008B1EAA /* Flash CardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7728FBF42D8CCDFE008B1EAA /* Build configuration list for PBXNativeTarget "Flash CardsUITests" */;
+			buildPhases = (
+				7728FBDF2D8CCDFE008B1EAA /* Sources */,
+				7728FBE02D8CCDFE008B1EAA /* Frameworks */,
+				7728FBE12D8CCDFE008B1EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7728FBE52D8CCDFE008B1EAA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7728FBE62D8CCDFE008B1EAA /* Flash CardsUITests */,
+			);
+			name = "Flash CardsUITests";
+			packageProductDependencies = (
+			);
+			productName = "Flash CardsUITests";
+			productReference = 7728FBE32D8CCDFE008B1EAA /* Flash CardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7728FBBB2D8CCDFC008B1EAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					7728FBC22D8CCDFC008B1EAA = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7728FBD82D8CCDFE008B1EAA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7728FBC22D8CCDFC008B1EAA;
+					};
+					7728FBE22D8CCDFE008B1EAA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7728FBC22D8CCDFC008B1EAA;
+					};
+				};
+			};
+			buildConfigurationList = 7728FBBE2D8CCDFC008B1EAA /* Build configuration list for PBXProject "Flash Cards" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7728FBBA2D8CCDFC008B1EAA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7728FBC42D8CCDFC008B1EAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7728FBC22D8CCDFC008B1EAA /* Flash Cards */,
+				7728FBD82D8CCDFE008B1EAA /* Flash CardsTests */,
+				7728FBE22D8CCDFE008B1EAA /* Flash CardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7728FBC12D8CCDFC008B1EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7728FC1C2D8CD2A7008B1EAA /* Assets.xcassets in Resources */,
+				7728FC1E2D8CD2A7008B1EAA /* LaunchScreen.storyboard in Resources */,
+				7728FC2C2D8D7A17008B1EAA /* GoogleService-Info.plist in Resources */,
+				7728FC1F2D8CD2A7008B1EAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7728FBD72D8CCDFE008B1EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7728FBE12D8CCDFE008B1EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7728FBBF2D8CCDFC008B1EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7728FC172D8CD2A7008B1EAA /* AppDelegate.swift in Sources */,
+				7728FC182D8CD2A7008B1EAA /* LoginViewController.swift in Sources */,
+				7728FC192D8CD2A7008B1EAA /* RegisterViewController.swift in Sources */,
+				7728FC212D8CD2D3008B1EAA /* MainViewController.swift in Sources */,
+				7728FC2A2D8D77AE008B1EAA /* Constants.swift in Sources */,
+				7728FC1A2D8CD2A7008B1EAA /* SceneDelegate.swift in Sources */,
+				7728FC1B2D8CD2A7008B1EAA /* WelcomeViewController.swift in Sources */,
+				7728FC312D8D7EAD008B1EAA /* AuthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7728FBD52D8CCDFE008B1EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7728FBDF2D8CCDFE008B1EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7728FBDB2D8CCDFE008B1EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7728FBC22D8CCDFC008B1EAA /* Flash Cards */;
+			targetProxy = 7728FBDA2D8CCDFE008B1EAA /* PBXContainerItemProxy */;
+		};
+		7728FBE52D8CCDFE008B1EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7728FBC22D8CCDFC008B1EAA /* Flash Cards */;
+			targetProxy = 7728FBE42D8CCDFE008B1EAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7728FC0F2D8CD2A7008B1EAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7728FC0E2D8CD2A7008B1EAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7728FC122D8CD2A7008B1EAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7728FC112D8CD2A7008B1EAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7728FBED2D8CCDFE008B1EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35JR4F3PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flash Cards/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novus.Flash-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7728FBEE2D8CCDFE008B1EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35JR4F3PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flash Cards/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novus.Flash-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7728FBEF2D8CCDFE008B1EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7728FBF02D8CCDFE008B1EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7728FBF22D8CCDFE008B1EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35JR4F3PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novus.Flash-CardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flash Cards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Flash Cards";
+			};
+			name = Debug;
+		};
+		7728FBF32D8CCDFE008B1EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35JR4F3PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novus.Flash-CardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flash Cards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Flash Cards";
+			};
+			name = Release;
+		};
+		7728FBF52D8CCDFE008B1EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35JR4F3PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novus.Flash-CardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Flash Cards";
+			};
+			name = Debug;
+		};
+		7728FBF62D8CCDFE008B1EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35JR4F3PRW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novus.Flash-CardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Flash Cards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7728FBBE2D8CCDFC008B1EAA /* Build configuration list for PBXProject "Flash Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7728FBEF2D8CCDFE008B1EAA /* Debug */,
+				7728FBF02D8CCDFE008B1EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7728FBEC2D8CCDFE008B1EAA /* Build configuration list for PBXNativeTarget "Flash Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7728FBED2D8CCDFE008B1EAA /* Debug */,
+				7728FBEE2D8CCDFE008B1EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7728FBF12D8CCDFE008B1EAA /* Build configuration list for PBXNativeTarget "Flash CardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7728FBF22D8CCDFE008B1EAA /* Debug */,
+				7728FBF32D8CCDFE008B1EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7728FBF42D8CCDFE008B1EAA /* Build configuration list for PBXNativeTarget "Flash CardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7728FBF52D8CCDFE008B1EAA /* Debug */,
+				7728FBF62D8CCDFE008B1EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7728FC232D8D73F7008B1EAA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7728FC252D8D73F7008B1EAA /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		7728FC272D8D73F7008B1EAA /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7728FBBB2D8CCDFC008B1EAA /* Project object */;
+}
