@@ -13,11 +13,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let authService = AuthService()
+    let authRegisterService = AuthService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        authService.delegate = self
+        authRegisterService.registerDelegate = self
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        authService.registerUser(email: email, password: password)
+        authRegisterService.registerUser(email: email, password: password)
     }
     
     
@@ -34,9 +34,9 @@ class RegisterViewController: UIViewController {
     
 }
 
-//MARK: - AuthServiceDelegate Methods
+//MARK: - AuthRegisterDelegate Methods
 
-extension RegisterViewController: AuthServiceDelegate {
+extension RegisterViewController: AuthRegisterDelegate {
     
     func didRegisterSuccessfully() {
         DispatchQueue.main.async {
