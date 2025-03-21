@@ -8,5 +8,6 @@
 struct K {
     struct Navigation {
         static let registerSegue = "RegisterToChat"
+        static let loginSegue = "LoginToChat"
     }
 }

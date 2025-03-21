@@ -7,22 +7,40 @@
 
 import FirebaseAuth
 
-protocol AuthServiceDelegate: AnyObject {
+protocol AuthRegisterDelegate: AnyObject {
     func didRegisterSuccessfully()
     func didFailToRegister(with error: Error)
 }
 
+protocol AuthLoginDelegate: AnyObject {
+    func didLoginSuccessfully()
+    func didFailToLogin(with error: Error)
+}
+
 class AuthService {
-    weak var delegate: AuthServiceDelegate?
+    weak var registerDelegate: AuthRegisterDelegate?
+    weak var loginDelegate: AuthLoginDelegate?
     
     func registerUser(email: String, password: String){
         Auth.auth().createUser(withEmail: email, password: password){ [weak self] authResult, error in
             if let e = error {
-                self?.delegate?.didFailToRegister(with: e)
+                self?.registerDelegate?.didFailToRegister(with: e)
             }
             else {
-                self?.delegate?.didRegisterSuccessfully()
+                self?.registerDelegate?.didRegisterSuccessfully()
             }
         }
     }
+    
+    func loginUser(email: String, password: String){
+        Auth.auth().signIn(withEmail: email, password: password){ [weak self] authResult, error in
+            if let e = error {
+                self?.loginDelegate?.didFailToLogin(with: e)
+            }
+            else {
+                self?.loginDelegate?.didLoginSuccessfully()
+            }
+        }
+    }
+    
 }
