@@ -12,6 +12,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmationPasswordTextField: UITextField!
     
     let authRegisterService = AuthService()
     
@@ -21,12 +22,19 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
-        guard let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else {
-            print("Email and password cannot be empty!")
-            return
+        if let email = emailTextField.text, !email.isEmpty,
+           let password = passwordTextField.text, !password.isEmpty,
+           let confirmationPassword = confirmationPasswordTextField.text, !confirmationPassword.isEmpty {
+            
+            if password == confirmationPassword {
+                authRegisterService.registerUser(email: email, password: password)
+            } else {
+                print("Passwords do not match!")
+            }
+            
+        } else {
+            print("Email, password, or confirmation password cannot be empty!")
         }
-        
-        authRegisterService.registerUser(email: email, password: password)
     }
     
     

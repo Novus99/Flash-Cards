@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     }
     
     
-    @IBAction func loginPressed(_ sender: UIButton) {
+    @IBAction func loginPressed(_ sender: RoundedButton) {
         guard let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else {
             print ("Please enter email and password")
             return
@@ -44,7 +44,7 @@ extension LoginViewController: AuthLoginDelegate {
     
     func didFailToLogin(with error: any Error) {
         DispatchQueue.main.async {
-            print("Firebase auth error: \(error.localizedDescription)")
+            print("Firebase auth error: \(error)")
         }
     }
 }

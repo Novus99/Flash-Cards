@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="81Z-yh-WxI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test-->
+        <scene sceneID="hhe-Kv-jGs">
+            <objects>
+                <viewController id="81Z-yh-WxI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faW-MV-Kcy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zi-Cx-fU8">
+                                <rect key="frame" x="175" y="135" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-haikei" translatesAutoresizingMaskIntoConstraints="NO" id="FH5-VV-4zz">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tpm-Lm-2Kn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FH5-VV-4zz" firstAttribute="trailing" secondItem="Tpm-Lm-2Kn" secondAttribute="trailing" id="Uix-d9-NrM"/>
+                            <constraint firstItem="FH5-VV-4zz" firstAttribute="top" secondItem="faW-MV-Kcy" secondAttribute="top" id="e4n-3K-EQP"/>
+                            <constraint firstItem="FH5-VV-4zz" firstAttribute="leading" secondItem="Tpm-Lm-2Kn" secondAttribute="leading" id="h70-Xv-let"/>
+                            <constraint firstAttribute="bottom" secondItem="FH5-VV-4zz" secondAttribute="bottom" id="hgm-oi-lM3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Test" image="text.rectangle.page" catalog="system" id="suc-AY-TP2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47b-1E-N0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5590" y="756"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="text.rectangle.page" catalog="system" width="115" height="128"/>
+        <image name="wave-haikei" width="250" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

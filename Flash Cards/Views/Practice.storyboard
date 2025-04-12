@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQS-Yp-S7m">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Practice-->
+        <scene sceneID="TXt-lc-lOG">
+            <objects>
+                <viewController id="HQS-Yp-S7m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2tm-Zp-HHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-haikei" translatesAutoresizingMaskIntoConstraints="NO" id="RuW-pN-keI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni9-eu-9hn">
+                                <rect key="frame" x="175" y="151" width="32" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5yF-mj-lKo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RuW-pN-keI" firstAttribute="top" secondItem="2tm-Zp-HHZ" secondAttribute="top" id="0EB-wy-tBK"/>
+                            <constraint firstItem="RuW-pN-keI" firstAttribute="leading" secondItem="5yF-mj-lKo" secondAttribute="leading" id="5kb-lh-dbd"/>
+                            <constraint firstAttribute="bottom" secondItem="RuW-pN-keI" secondAttribute="bottom" id="S9H-sb-wYr"/>
+                            <constraint firstItem="RuW-pN-keI" firstAttribute="trailing" secondItem="5yF-mj-lKo" secondAttribute="trailing" id="yXA-iv-LVa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Practice" image="figure.strengthtraining.traditional" catalog="system" id="6Wr-0D-d1l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAK-eV-a0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3814.5038167938928" y="755.63380281690149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="figure.strengthtraining.traditional" catalog="system" width="128" height="119"/>
+        <image name="wave-haikei" width="250" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

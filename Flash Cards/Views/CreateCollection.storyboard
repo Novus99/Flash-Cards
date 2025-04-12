@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o8D-WP-Phl">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection Creation View Controller-->
+        <scene sceneID="HE2-Om-VhU">
+            <objects>
+                <viewController id="o8D-WP-Phl" customClass="CollectionCreationViewController" customModule="Flash_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d2e-K3-P2S">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-haikei" translatesAutoresizingMaskIntoConstraints="NO" id="Yu5-uj-HnS">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mE7-jJ-x1P">
+                                <rect key="frame" x="0.0" y="62" width="440" height="860"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Collection Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHV-6w-ogp">
+                                        <rect key="frame" x="89" y="0.0" width="262" height="62"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="primaryColor"/>
+                                        <color key="textColor" name="primaryColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IdN-nV-L0W">
+                                        <rect key="frame" x="44" y="70" width="352" height="129"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7AP-o6-zeV">
+                                                <rect key="frame" x="0.0" y="0.0" width="217" height="129"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXK-Dj-9a2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="217" height="59.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Translation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3h-gc-csY">
+                                                        <rect key="frame" x="0.0" y="69.666666666666657" width="217" height="59.333333333333343"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xvf-vR-xpP">
+                                                <rect key="frame" x="227" y="0.0" width="125" height="129"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6SO-DZ-ja2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="25.666666666666668"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmj-1y-W4j" customClass="RoundedButton" customModule="Flash_Cards" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25.666666666666664" width="125" height="77.666666666666686"/>
+                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" name="primaryColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                <color key="value" name="primaryColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="addWordPressed:" destination="o8D-WP-Phl" eventType="touchUpInside" id="1mK-Ch-xa5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1C-Nf-Okv">
+                                                        <rect key="frame" x="0.0" y="103.33333333333334" width="125" height="25.666666666666657"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Bmj-1y-W4j" firstAttribute="centerY" secondItem="xvf-vR-xpP" secondAttribute="centerY" id="7HN-KZ-cLP"/>
+                                                    <constraint firstItem="Bmj-1y-W4j" firstAttribute="height" secondItem="xvf-vR-xpP" secondAttribute="height" multiplier="3:5" id="esv-gR-pyf"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="7AP-o6-zeV" firstAttribute="width" secondItem="IdN-nV-L0W" secondAttribute="width" multiplier="95:154" id="GZc-IW-18p"/>
+                                        </constraints>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M6p-eB-Zjt">
+                                        <rect key="frame" x="44" y="207" width="352" height="559"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzp-Lc-7HZ" customClass="RoundedButton" customModule="Flash_Cards" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="774" width="264" height="86"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" name="primaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save collection"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" name="primaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveCollectionPressed:" destination="o8D-WP-Phl" eventType="touchUpInside" id="MMZ-HW-EZg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IdN-nV-L0W" firstAttribute="width" secondItem="mE7-jJ-x1P" secondAttribute="width" multiplier="0.8" id="6ob-tl-THg"/>
+                                    <constraint firstItem="Qzp-Lc-7HZ" firstAttribute="width" secondItem="mE7-jJ-x1P" secondAttribute="width" multiplier="0.6" id="DQG-A6-l1Z"/>
+                                    <constraint firstItem="M6p-eB-Zjt" firstAttribute="height" relation="lessThanOrEqual" secondItem="mE7-jJ-x1P" secondAttribute="height" multiplier="6.5:10" id="E7B-hH-7Lz"/>
+                                    <constraint firstItem="IdN-nV-L0W" firstAttribute="height" relation="lessThanOrEqual" secondItem="mE7-jJ-x1P" secondAttribute="height" multiplier="1.5:10" id="PIN-v0-IhW"/>
+                                    <constraint firstItem="dHV-6w-ogp" firstAttribute="width" relation="lessThanOrEqual" secondItem="mE7-jJ-x1P" secondAttribute="width" multiplier="0.6" id="QSL-R0-Dx1"/>
+                                    <constraint firstItem="dHV-6w-ogp" firstAttribute="height" relation="lessThanOrEqual" secondItem="mE7-jJ-x1P" secondAttribute="height" multiplier="1:10" id="bDM-9M-At8"/>
+                                    <constraint firstItem="M6p-eB-Zjt" firstAttribute="width" secondItem="mE7-jJ-x1P" secondAttribute="width" multiplier="0.8" id="kzr-ba-ufV"/>
+                                    <constraint firstItem="Qzp-Lc-7HZ" firstAttribute="height" relation="lessThanOrEqual" secondItem="mE7-jJ-x1P" secondAttribute="height" multiplier="1:10" id="scv-rC-eB4"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J1k-Ug-73J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mE7-jJ-x1P" firstAttribute="centerX" secondItem="d2e-K3-P2S" secondAttribute="centerX" id="0pE-Tb-hk2"/>
+                            <constraint firstAttribute="trailing" secondItem="Yu5-uj-HnS" secondAttribute="trailing" id="JPH-cp-lQy"/>
+                            <constraint firstItem="Yu5-uj-HnS" firstAttribute="leading" secondItem="d2e-K3-P2S" secondAttribute="leading" id="QAn-TZ-JGH"/>
+                            <constraint firstItem="mE7-jJ-x1P" firstAttribute="leading" secondItem="J1k-Ug-73J" secondAttribute="leading" id="YCj-oG-mnI"/>
+                            <constraint firstItem="Yu5-uj-HnS" firstAttribute="top" secondItem="d2e-K3-P2S" secondAttribute="top" id="cc3-pB-7Ma"/>
+                            <constraint firstItem="mE7-jJ-x1P" firstAttribute="top" secondItem="J1k-Ug-73J" secondAttribute="top" id="ddp-vc-vB4"/>
+                            <constraint firstItem="J1k-Ug-73J" firstAttribute="bottom" secondItem="mE7-jJ-x1P" secondAttribute="bottom" id="nu4-bJ-teX"/>
+                            <constraint firstItem="J1k-Ug-73J" firstAttribute="trailing" secondItem="mE7-jJ-x1P" secondAttribute="trailing" id="o20-78-3PZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Yu5-uj-HnS" secondAttribute="bottom" id="qtv-H2-8rZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pyg-Tj-rck"/>
+                    <connections>
+                        <outlet property="collectionNameTextField" destination="dHV-6w-ogp" id="poJ-oJ-Cd8"/>
+                        <outlet property="translationTextField" destination="J3h-gc-csY" id="Bif-Hn-bet"/>
+                        <outlet property="wordTableView" destination="M6p-eB-Zjt" id="KYs-75-aRz"/>
+                        <outlet property="wordTextField" destination="kXK-Dj-9a2" id="3GN-UF-DpZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1T-EK-IvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4704.545454545455" y="1526.9874476987447"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wave-haikei" width="250" height="500"/>
+        <namedColor name="primaryColor">
+            <color red="0.0" green="0.19200000166893005" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QbX-l6-Q5e">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wellcome-->
+        <scene sceneID="zrB-HQ-IE8">
+            <objects>
+                <viewController storyboardIdentifier="Wellcome" title="Wellcome" id="QbX-l6-Q5e" customClass="WelcomeViewController" customModule="Flash_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oqJ-Hf-nD5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-haikei" translatesAutoresizingMaskIntoConstraints="NO" id="viT-IF-ibp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-I5-ukT">
+                                <rect key="frame" x="76.666666666666686" y="359" width="240" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-h4-0ie" customClass="RoundedButton" customModule="Flash_Cards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qkt-j6-iFd"/>
+                                        </constraints>
+                                        <color key="tintColor" name="primaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <connections>
+                                            <segue destination="aVn-ft-e8l" kind="show" id="kc9-Bn-aIS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2j-rk-zGI" customClass="RoundedButton" customModule="Flash_Cards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="240" height="60"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="L3Y-gz-PsM"/>
+                                        </constraints>
+                                        <color key="tintColor" name="primaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                        <connections>
+                                            <segue destination="hrq-lR-QhP" kind="show" id="4lh-KK-aj9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4Pu-9q-lj3"/>
+                                    <constraint firstItem="E2j-rk-zGI" firstAttribute="centerX" secondItem="qB0-I5-ukT" secondAttribute="centerX" id="GOa-84-Gdi"/>
+                                    <constraint firstItem="OfH-h4-0ie" firstAttribute="centerX" secondItem="qB0-I5-ukT" secondAttribute="centerX" id="j3X-je-3TM"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJN-Uz-IFu" customClass="CLTypingLabel" customModule="Flash_Cards" customModuleProvider="target">
+                                <rect key="frame" x="83.666666666666686" y="59" width="226" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" name="primaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gpI-hX-3V3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EJN-Uz-IFu" firstAttribute="centerX" secondItem="oqJ-Hf-nD5" secondAttribute="centerX" id="1rU-Nf-ggL"/>
+                            <constraint firstItem="viT-IF-ibp" firstAttribute="trailing" secondItem="gpI-hX-3V3" secondAttribute="trailing" id="Gah-yU-T7q"/>
+                            <constraint firstAttribute="bottom" secondItem="viT-IF-ibp" secondAttribute="bottom" id="H9X-NL-ieb"/>
+                            <constraint firstItem="EJN-Uz-IFu" firstAttribute="top" secondItem="gpI-hX-3V3" secondAttribute="top" id="M1R-FD-clW"/>
+                            <constraint firstItem="viT-IF-ibp" firstAttribute="leading" secondItem="gpI-hX-3V3" secondAttribute="leading" id="Xtt-37-E6J"/>
+                            <constraint firstItem="viT-IF-ibp" firstAttribute="top" secondItem="oqJ-Hf-nD5" secondAttribute="top" id="rbB-72-vgZ"/>
+                            <constraint firstItem="qB0-I5-ukT" firstAttribute="centerX" secondItem="oqJ-Hf-nD5" secondAttribute="centerX" id="sHG-yd-gh0"/>
+                            <constraint firstItem="qB0-I5-ukT" firstAttribute="centerY" secondItem="oqJ-Hf-nD5" secondAttribute="centerY" id="xg0-wg-CkI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ukQ-pf-kDb"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="EJN-Uz-IFu" id="Kik-bG-3bH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFN-qS-mpZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017.5572519083969" y="40.845070422535215"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="JN4-XN-3yH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="aVn-ft-e8l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gPh-Uh-NPG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERF-t8-UBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="-36"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="nf7-JW-cWS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="hrq-lR-QhP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dfq-P2-VJf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xic-9l-8jq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wave-haikei" width="250" height="500"/>
+        <namedColor name="primaryColor">
+            <color red="0.0" green="0.19200000166893005" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

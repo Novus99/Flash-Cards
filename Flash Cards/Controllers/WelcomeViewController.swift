@@ -9,8 +9,11 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: CLTypingLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.text = "\(K.appName)"
         // Do any additional setup after loading the view.
     }
 
