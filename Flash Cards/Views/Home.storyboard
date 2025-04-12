@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TXH-W2-PXS">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--home-->
+        <scene sceneID="TpH-Rc-ISh">
+            <objects>
+                <viewController id="TXH-W2-PXS" customClass="MainViewController" customModule="Flash_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wog-J7-Zzm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-haikei" translatesAutoresizingMaskIntoConstraints="NO" id="P7n-Tf-DK1">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG0-uX-7Iw">
+                                <rect key="frame" x="175" y="162" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jAD-23-0d9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P7n-Tf-DK1" secondAttribute="bottom" id="GQY-LC-mBd"/>
+                            <constraint firstItem="P7n-Tf-DK1" firstAttribute="leading" secondItem="jAD-23-0d9" secondAttribute="leading" id="HfO-eT-S2X"/>
+                            <constraint firstItem="P7n-Tf-DK1" firstAttribute="leading" secondItem="jAD-23-0d9" secondAttribute="leading" id="OuY-ha-nws"/>
+                            <constraint firstItem="P7n-Tf-DK1" firstAttribute="trailing" secondItem="jAD-23-0d9" secondAttribute="trailing" id="Tcj-Sh-4Om"/>
+                            <constraint firstItem="P7n-Tf-DK1" firstAttribute="top" secondItem="wog-J7-Zzm" secondAttribute="top" id="Zca-bU-KoZ"/>
+                            <constraint firstItem="P7n-Tf-DK1" firstAttribute="trailing" secondItem="jAD-23-0d9" secondAttribute="trailing" id="oze-3J-9td"/>
+                            <constraint firstItem="P7n-Tf-DK1" firstAttribute="top" secondItem="wog-J7-Zzm" secondAttribute="top" id="pwi-Dy-Mif"/>
+                            <constraint firstAttribute="bottom" secondItem="P7n-Tf-DK1" secondAttribute="bottom" id="xCR-gg-dFY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="home" image="house" catalog="system" id="i8F-UE-Td1">
+                        <color key="badgeColor" red="0.98823529409999999" green="0.90588235289999997" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <imageReference key="selectedImage" image="house" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Fe7-84-wu5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="337-hs-jSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924" y="756"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="wave-haikei" width="250" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

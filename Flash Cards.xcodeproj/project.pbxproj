@@ -22,6 +22,28 @@
 		7728FC2A2D8D77AE008B1EAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC292D8D77AB008B1EAA /* Constants.swift */; };
 		7728FC2C2D8D7A17008B1EAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7728FC2B2D8D7A17008B1EAA /* GoogleService-Info.plist */; };
 		7728FC312D8D7EAD008B1EAA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728FC302D8D7EA5008B1EAA /* AuthService.swift */; };
+		7755E1022D9311A400FF1A89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1012D9311A400FF1A89 /* Login.storyboard */; };
+		7755E1042D93122900FF1A89 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1032D93122900FF1A89 /* Register.storyboard */; };
+		7755E1062D9312BA00FF1A89 /* Wellcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */; };
+		7755E1082D93132200FF1A89 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1072D93132200FF1A89 /* Home.storyboard */; };
+		7755E10C2D93138000FF1A89 /* Practice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E10B2D93138000FF1A89 /* Practice.storyboard */; };
+		7755E10E2D9313AE00FF1A89 /* Collections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E10D2D9313AE00FF1A89 /* Collections.storyboard */; };
+		7755E1102D9313F200FF1A89 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E10F2D9313F200FF1A89 /* Test.storyboard */; };
+		7755E1122D93143E00FF1A89 /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1112D93143E00FF1A89 /* Personal.storyboard */; };
+		7755E1142D9314A000FF1A89 /* CreateCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1132D9314A000FF1A89 /* CreateCollection.storyboard */; };
+		7755E1162D931A5000FF1A89 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1152D931A5000FF1A89 /* TabBar.storyboard */; };
+		7755E11B2D96E0AF00FF1A89 /* WordTranslationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7755E11A2D96E0AF00FF1A89 /* WordTranslationCell.xib */; };
+		7755E11C2D96E0AF00FF1A89 /* WordTranslationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755E1192D96E0AF00FF1A89 /* WordTranslationCell.swift */; };
+		7755E11E2D96EBF200FF1A89 /* ReusableWordTranslationCell.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7755E11D2D96EBF200FF1A89 /* ReusableWordTranslationCell.txt */; };
+		7787A9372DAADFAA00D9C42C /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A9362DAADFAA00D9C42C /* CollectionsViewController.swift */; };
+		7787A93C2DAAEB7E00D9C42C /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7787A93B2DAAEB7E00D9C42C /* CollectionCell.xib */; };
+		7787A93D2DAAEB7E00D9C42C /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A93A2DAAEB7E00D9C42C /* CollectionCell.swift */; };
+		77E4F7F92D90340700520DA0 /* CLTypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F7F82D90340700520DA0 /* CLTypingLabel.swift */; };
+		77E4F7FB2D9036E200520DA0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F7FA2D9036D700520DA0 /* RoundedButton.swift */; };
+		77E4F83A2D91CE4B00520DA0 /* WordCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F8392D91CE4600520DA0 /* WordCollection.swift */; };
+		77E4F83C2D91D05700520DA0 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F83B2D91D05500520DA0 /* Flashcard.swift */; };
+		77E4F83E2D91D1F900520DA0 /* CollectionCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F83D2D91D1F300520DA0 /* CollectionCreationViewController.swift */; };
+		77E4F8402D91DF0400520DA0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 77E4F83F2D91DF0400520DA0 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +80,27 @@
 		7728FC292D8D77AB008B1EAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7728FC2B2D8D7A17008B1EAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7728FC302D8D7EA5008B1EAA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7755E1012D9311A400FF1A89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7755E1032D93122900FF1A89 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wellcome.storyboard; sourceTree = "<group>"; };
+		7755E1072D93132200FF1A89 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7755E10B2D93138000FF1A89 /* Practice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Practice.storyboard; sourceTree = "<group>"; };
+		7755E10D2D9313AE00FF1A89 /* Collections.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collections.storyboard; sourceTree = "<group>"; };
+		7755E10F2D9313F200FF1A89 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		7755E1112D93143E00FF1A89 /* Personal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Personal.storyboard; sourceTree = "<group>"; };
+		7755E1132D9314A000FF1A89 /* CreateCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCollection.storyboard; sourceTree = "<group>"; };
+		7755E1152D931A5000FF1A89 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		7755E1192D96E0AF00FF1A89 /* WordTranslationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTranslationCell.swift; sourceTree = "<group>"; };
+		7755E11A2D96E0AF00FF1A89 /* WordTranslationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTranslationCell.xib; sourceTree = "<group>"; };
+		7755E11D2D96EBF200FF1A89 /* ReusableWordTranslationCell.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReusableWordTranslationCell.txt; sourceTree = "<group>"; };
+		7787A9362DAADFAA00D9C42C /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		7787A93A2DAAEB7E00D9C42C /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		7787A93B2DAAEB7E00D9C42C /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		77E4F7F82D90340700520DA0 /* CLTypingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTypingLabel.swift; sourceTree = "<group>"; };
+		77E4F7FA2D9036D700520DA0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		77E4F8392D91CE4600520DA0 /* WordCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollection.swift; sourceTree = "<group>"; };
+		77E4F83B2D91D05500520DA0 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		77E4F83D2D91D1F300520DA0 /* CollectionCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7728FC262D8D73F7008B1EAA /* FirebaseCore in Frameworks */,
+				77E4F8402D91DF0400520DA0 /* FirebaseFirestore in Frameworks */,
 				7728FC242D8D73F7008B1EAA /* FirebaseAuth in Frameworks */,
 				7728FC282D8D73F7008B1EAA /* FirebaseStorage in Frameworks */,
 			);
@@ -124,7 +168,22 @@
 		7728FC0A2D8CD2A7008B1EAA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				77E4F7FA2D9036D700520DA0 /* RoundedButton.swift */,
 				7728FC122D8CD2A7008B1EAA /* Main.storyboard */,
+				7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */,
+				7755E1012D9311A400FF1A89 /* Login.storyboard */,
+				7755E1032D93122900FF1A89 /* Register.storyboard */,
+				7755E1152D931A5000FF1A89 /* TabBar.storyboard */,
+				7755E1072D93132200FF1A89 /* Home.storyboard */,
+				7755E10B2D93138000FF1A89 /* Practice.storyboard */,
+				7755E10D2D9313AE00FF1A89 /* Collections.storyboard */,
+				7755E10F2D9313F200FF1A89 /* Test.storyboard */,
+				7755E1112D93143E00FF1A89 /* Personal.storyboard */,
+				7755E1132D9314A000FF1A89 /* CreateCollection.storyboard */,
+				7755E1192D96E0AF00FF1A89 /* WordTranslationCell.swift */,
+				7755E11A2D96E0AF00FF1A89 /* WordTranslationCell.xib */,
+				7787A93A2DAAEB7E00D9C42C /* CollectionCell.swift */,
+				7787A93B2DAAEB7E00D9C42C /* CollectionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +202,8 @@
 				7728FC142D8CD2A7008B1EAA /* SceneDelegate.swift */,
 				7728FC2B2D8D7A17008B1EAA /* GoogleService-Info.plist */,
 				7728FC292D8D77AB008B1EAA /* Constants.swift */,
+				7755E11D2D96EBF200FF1A89 /* ReusableWordTranslationCell.txt */,
+				77E4F7F82D90340700520DA0 /* CLTypingLabel.swift */,
 			);
 			path = "Flash Cards";
 			sourceTree = "<group>";
@@ -150,6 +211,8 @@
 		7728FC2D2D8D7C8B008B1EAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77E4F83B2D91D05500520DA0 /* Flashcard.swift */,
+				77E4F8392D91CE4600520DA0 /* WordCollection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,10 +220,12 @@
 		7728FC2E2D8D7C91008B1EAA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77E4F83D2D91D1F300520DA0 /* CollectionCreationViewController.swift */,
 				7728FC202D8CD2CE008B1EAA /* MainViewController.swift */,
 				7728FC132D8CD2A7008B1EAA /* RegisterViewController.swift */,
 				7728FC152D8CD2A7008B1EAA /* WelcomeViewController.swift */,
 				7728FC102D8CD2A7008B1EAA /* LoginViewController.swift */,
+				7787A9362DAADFAA00D9C42C /* CollectionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +258,7 @@
 				7728FC232D8D73F7008B1EAA /* FirebaseAuth */,
 				7728FC252D8D73F7008B1EAA /* FirebaseCore */,
 				7728FC272D8D73F7008B1EAA /* FirebaseStorage */,
+				77E4F83F2D91DF0400520DA0 /* FirebaseFirestore */,
 			);
 			productName = "Flash Cards";
 			productReference = 7728FBC32D8CCDFC008B1EAA /* Flash Cards.app */;
@@ -296,10 +362,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7755E11B2D96E0AF00FF1A89 /* WordTranslationCell.xib in Resources */,
+				7755E10C2D93138000FF1A89 /* Practice.storyboard in Resources */,
 				7728FC1C2D8CD2A7008B1EAA /* Assets.xcassets in Resources */,
+				7755E10E2D9313AE00FF1A89 /* Collections.storyboard in Resources */,
 				7728FC1E2D8CD2A7008B1EAA /* LaunchScreen.storyboard in Resources */,
+				7755E1142D9314A000FF1A89 /* CreateCollection.storyboard in Resources */,
 				7728FC2C2D8D7A17008B1EAA /* GoogleService-Info.plist in Resources */,
+				7755E1022D9311A400FF1A89 /* Login.storyboard in Resources */,
+				7755E1122D93143E00FF1A89 /* Personal.storyboard in Resources */,
+				7755E1062D9312BA00FF1A89 /* Wellcome.storyboard in Resources */,
 				7728FC1F2D8CD2A7008B1EAA /* Main.storyboard in Resources */,
+				7755E11E2D96EBF200FF1A89 /* ReusableWordTranslationCell.txt in Resources */,
+				7755E1102D9313F200FF1A89 /* Test.storyboard in Resources */,
+				7755E1042D93122900FF1A89 /* Register.storyboard in Resources */,
+				7755E1162D931A5000FF1A89 /* TabBar.storyboard in Resources */,
+				7787A93C2DAAEB7E00D9C42C /* CollectionCell.xib in Resources */,
+				7755E1082D93132200FF1A89 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,14 +403,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E4F7F92D90340700520DA0 /* CLTypingLabel.swift in Sources */,
+				77E4F7FB2D9036E200520DA0 /* RoundedButton.swift in Sources */,
 				7728FC172D8CD2A7008B1EAA /* AppDelegate.swift in Sources */,
 				7728FC182D8CD2A7008B1EAA /* LoginViewController.swift in Sources */,
+				7755E11C2D96E0AF00FF1A89 /* WordTranslationCell.swift in Sources */,
 				7728FC192D8CD2A7008B1EAA /* RegisterViewController.swift in Sources */,
 				7728FC212D8CD2D3008B1EAA /* MainViewController.swift in Sources */,
+				77E4F83C2D91D05700520DA0 /* Flashcard.swift in Sources */,
 				7728FC2A2D8D77AE008B1EAA /* Constants.swift in Sources */,
 				7728FC1A2D8CD2A7008B1EAA /* SceneDelegate.swift in Sources */,
+				7787A9372DAADFAA00D9C42C /* CollectionsViewController.swift in Sources */,
+				7787A93D2DAAEB7E00D9C42C /* CollectionCell.swift in Sources */,
 				7728FC1B2D8CD2A7008B1EAA /* WelcomeViewController.swift in Sources */,
+				77E4F83E2D91D1F900520DA0 /* CollectionCreationViewController.swift in Sources */,
 				7728FC312D8D7EAD008B1EAA /* AuthService.swift in Sources */,
+				77E4F83A2D91CE4B00520DA0 /* WordCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +787,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		77E4F83F2D91DF0400520DA0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7728FC222D8D73F7008B1EAA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

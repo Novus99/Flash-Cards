@@ -6,8 +6,24 @@
 //
 
 struct K {
+    
+    static let appName = "Flash Cards"
+    
     struct Navigation {
-        static let registerSegue = "RegisterToChat"
-        static let loginSegue = "LoginToChat"
+        static let registerSegue = "RegisterToHome"
+        static let loginSegue = "LoginToHome"
+    }
+    
+    struct CustomCells {
+        static let reusableWordTranslationCell = "ReusableWordTranslationCell"
+        static let wordTranslationCell = "WordTranslationCell"
+        static let reusableCollectionCell = "ReusableCollectionCell"
+        static let collectionCell = "CollectionCell"
+    }
+    
+    struct FStore {
+        static let collectionName = "Collections"
+        static let dateField = "createdAt"
+        static let collectionTitle = "title"
     }
 }
