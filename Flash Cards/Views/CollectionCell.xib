@@ -19,22 +19,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-aB-O61">
-                        <rect key="frame" x="103" y="11.666666666666664" width="114" height="21"/>
+                        <rect key="frame" x="103.33333333333331" y="11.999999999999998" width="113.66666666666669" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" name="primaryColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="1vw-aB-O61" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3zv-lS-Kw7"/>
-                    <constraint firstItem="1vw-aB-O61" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rzX-Jm-O8o"/>
+                    <constraint firstItem="1vw-aB-O61" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WFd-EF-XUf"/>
+                    <constraint firstItem="1vw-aB-O61" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qRZ-6A-tMN"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="title" destination="1vw-aB-O61" id="Rig-ga-oQ9"/>
             </connections>
-            <point key="canvasLocation" x="131" y="-11"/>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.267605633802818"/>
         </tableViewCell>
     </objects>
     <resources>

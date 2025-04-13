@@ -23,12 +23,15 @@ class CollectionCreationViewController: UIViewController {
         super.viewDidLoad()
         wordTableView.dataSource = self
         wordTableView.register(UINib(nibName: K.CustomCells.wordTranslationCell, bundle: nil), forCellReuseIdentifier: K.CustomCells.reusableWordTranslationCell)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+            view.addGestureRecognizer(tapGesture)
+        	
     }
     
     @IBAction func addWordPressed(_ sender: UIButton) {
         if let word = wordTextField.text, !word.isEmpty, let translation = translationTextField.text, !translation.isEmpty {
             let flashcard = Flashcard(id: UUID(),word: word, translation: translation)
-            flashcardsList.append(flashcard)
+            flashcardsList.insert(flashcard, at: 0)
             setTextFieldsBlank()
             wordTableView.reloadData()
             print (flashcardsList)
@@ -58,8 +61,10 @@ class CollectionCreationViewController: UIViewController {
            )
         print(newWordCollection)
         do {
-            try db.collection("\(Auth.auth().currentUser!.email!)").addDocument(from: newWordCollection)
+            try db.collection("\(Auth.auth().currentUser!.email!)").document(newWordCollection.id.uuidString)
+                .setData(from: newWordCollection)
             print("Document added succesfully!")
+            performSegue(withIdentifier: K.Navigation.createCollectiontoCollectionsSegue, sender: self)
         }   catch {
             print("Error while adding document: \(error)")
         }
@@ -68,6 +73,10 @@ class CollectionCreationViewController: UIViewController {
     func setTextFieldsBlank(){
         wordTextField.text = ""
         translationTextField.text = ""
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

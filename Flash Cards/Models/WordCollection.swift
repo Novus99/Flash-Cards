@@ -9,9 +9,9 @@ import Foundation
 struct WordCollection: Codable{
     
     let id: UUID
-    let owner: String
+    let owner: String?
     let title: String
-    let createdAt: Double
-    var words: [Flashcard]
+    let createdAt: Double?
+    var words: [Flashcard]?
     
 }
