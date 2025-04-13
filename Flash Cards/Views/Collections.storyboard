@@ -47,7 +47,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Mpx-2z-la0" kind="show" id="Yv6-Oe-ttv"/>
+                                    <segue destination="Mpx-2z-la0" kind="show" identifier="CreateCollectionToCollections" id="Yv6-Oe-ttv"/>
                                 </connections>
                             </button>
                         </subviews>
