@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  Flash Cards
-//
-//  Created by Novus on 12/04/2025.
-//
-
 import UIKit
 import FirebaseAuth
 import Firebase
@@ -59,8 +52,42 @@ class CollectionsViewController: UIViewController {
         }
     }
     
-    func deleteCollection(){
+    func showDeleteConfirmation(indexPath: Int){
+        let alertController = UIAlertController(
+            title: "Do you really want to delete this collection?",
+            message: "This operation is irreversable.",
+            preferredStyle: .alert
+        )
         
+        let confirmAction = UIAlertAction(title: "Yes", style: .destructive) {
+            _ in self.deleteItem(at: indexPath)
+        }
+        
+        let cancelAction = UIAlertAction(title: "No", style: .cancel)
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true)
+    }
+    
+    func deleteItem(at indexPath: Int) {
+        let id = self.collections[indexPath].id
+        do {
+            try self.db.collection("\(Auth.auth().currentUser!.email!)").document(id.uuidString).delete()
+            
+            // Usuń lokalnie z modelu
+            self.collections.remove(at: indexPath)
+            
+            // Odśwież tabelę
+            DispatchQueue.main.async {
+                self.collectionsTableView.reloadData()
+            }
+            
+            print("Document successfully removed!")
+        } catch {
+            print("Error removing document: \(error)")
+        }
     }
 }
 
@@ -99,19 +126,8 @@ extension CollectionsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath ) ->
     UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .normal, title: "Delete") { (action, view, completionHandler) in
-            Task {
-                let id = self.collections[indexPath.row].id
-                do {
-                    try await self.db.collection("\(Auth.auth().currentUser!.email!)").document(id.uuidString).delete()
-                    DispatchQueue.main.async {
-                        self.collectionsTableView.reloadData()
-                    }
-                    print("Document successfully removed!")
-                } catch {
-                    print("Error removing document: \(error)")
-                }
-                completionHandler(true)
-            }
+            self.showDeleteConfirmation(indexPath: indexPath.row)
+            completionHandler(true)
         }
         deleteAction.backgroundColor = .red
         
@@ -120,5 +136,3 @@ extension CollectionsViewController: UITableViewDelegate {
         return swipeConfig
     }
 }
-
-
