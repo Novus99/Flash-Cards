@@ -8,3 +8,8 @@
 # macOS system files
 .DS_Store
 **/.DS_Store
+
+# Xcode user data
+*.xcuserstate
+*.xcuserdata/
+*.xcworkspace/xcuserdata/
