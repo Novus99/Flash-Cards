@@ -25,6 +25,8 @@
 		772CEBE82DB66B9700583C2B /* CollectionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEBE72DB66B9700583C2B /* CollectionsService.swift */; };
 		772CEBEB2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEBEA2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift */; };
 		772CEBED2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEBEC2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift */; };
+		772CEC062DB6863900583C2B /* CollectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEC032DB6863900583C2B /* CollectionFormViewController.swift */; };
+		772CEC072DB6863900583C2B /* CollectionFormViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEC042DB6863900583C2B /* CollectionFormViewController+TableView.swift */; };
 		7755E1022D9311A400FF1A89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1012D9311A400FF1A89 /* Login.storyboard */; };
 		7755E1042D93122900FF1A89 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1032D93122900FF1A89 /* Register.storyboard */; };
 		7755E1062D9312BA00FF1A89 /* Wellcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */; };
@@ -45,7 +47,6 @@
 		77E4F7FB2D9036E200520DA0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F7FA2D9036D700520DA0 /* RoundedButton.swift */; };
 		77E4F83A2D91CE4B00520DA0 /* WordCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F8392D91CE4600520DA0 /* WordCollection.swift */; };
 		77E4F83C2D91D05700520DA0 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F83B2D91D05500520DA0 /* Flashcard.swift */; };
-		77E4F83E2D91D1F900520DA0 /* CollectionCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4F83D2D91D1F300520DA0 /* CollectionCreationViewController.swift */; };
 		77E4F8402D91DF0400520DA0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 77E4F83F2D91DF0400520DA0 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,8 @@
 		772CEBE72DB66B9700583C2B /* CollectionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsService.swift; sourceTree = "<group>"; };
 		772CEBEA2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionsViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		772CEBEC2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionsViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		772CEC032DB6863900583C2B /* CollectionFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFormViewController.swift; sourceTree = "<group>"; };
+		772CEC042DB6863900583C2B /* CollectionFormViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionFormViewController+TableView.swift"; sourceTree = "<group>"; };
 		7755E1012D9311A400FF1A89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		7755E1032D93122900FF1A89 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wellcome.storyboard; sourceTree = "<group>"; };
@@ -106,7 +109,6 @@
 		77E4F7FA2D9036D700520DA0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		77E4F8392D91CE4600520DA0 /* WordCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollection.swift; sourceTree = "<group>"; };
 		77E4F83B2D91D05500520DA0 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
-		77E4F83D2D91D1F300520DA0 /* CollectionCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -226,8 +228,8 @@
 		7728FC2E2D8D7C91008B1EAA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				772CEC052DB6863900583C2B /* CollectionForm */,
 				772CEBE92DB66BD600583C2B /* Collections */,
-				77E4F83D2D91D1F300520DA0 /* CollectionCreationViewController.swift */,
 				7728FC202D8CD2CE008B1EAA /* MainViewController.swift */,
 				7728FC132D8CD2A7008B1EAA /* RegisterViewController.swift */,
 				7728FC152D8CD2A7008B1EAA /* WelcomeViewController.swift */,
@@ -253,6 +255,15 @@
 				772CEBEC2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift */,
 			);
 			path = Collections;
+			sourceTree = "<group>";
+		};
+		772CEC052DB6863900583C2B /* CollectionForm */ = {
+			isa = PBXGroup;
+			children = (
+				772CEC032DB6863900583C2B /* CollectionFormViewController.swift */,
+				772CEC042DB6863900583C2B /* CollectionFormViewController+TableView.swift */,
+			);
+			path = CollectionForm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +438,8 @@
 				7755E11C2D96E0AF00FF1A89 /* WordTranslationCell.swift in Sources */,
 				7728FC192D8CD2A7008B1EAA /* RegisterViewController.swift in Sources */,
 				7728FC212D8CD2D3008B1EAA /* MainViewController.swift in Sources */,
+				772CEC062DB6863900583C2B /* CollectionFormViewController.swift in Sources */,
+				772CEC072DB6863900583C2B /* CollectionFormViewController+TableView.swift in Sources */,
 				77E4F83C2D91D05700520DA0 /* Flashcard.swift in Sources */,
 				7728FC2A2D8D77AE008B1EAA /* Constants.swift in Sources */,
 				7728FC1A2D8CD2A7008B1EAA /* SceneDelegate.swift in Sources */,
@@ -435,7 +448,6 @@
 				7787A93D2DAAEB7E00D9C42C /* CollectionCell.swift in Sources */,
 				772CEBEB2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift in Sources */,
 				7728FC1B2D8CD2A7008B1EAA /* WelcomeViewController.swift in Sources */,
-				77E4F83E2D91D1F900520DA0 /* CollectionCreationViewController.swift in Sources */,
 				7728FC312D8D7EAD008B1EAA /* AuthService.swift in Sources */,
 				772CEBED2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift in Sources */,
 				77E4F83A2D91CE4B00520DA0 /* WordCollection.swift in Sources */,
