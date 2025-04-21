@@ -8,7 +8,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 
-class CollectionCreationViewController: UIViewController {
+class CollectionFormViewController: UIViewController {
     
     @IBOutlet weak var collectionNameTextField: UITextField!
     @IBOutlet weak var wordTextField: UITextField!
@@ -80,7 +80,7 @@ class CollectionCreationViewController: UIViewController {
     }
 }
 
-extension CollectionCreationViewController: UITableViewDataSource {
+extension CollectionFormViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return flashcardsList.count
     }
