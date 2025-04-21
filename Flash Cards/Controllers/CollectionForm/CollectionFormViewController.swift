@@ -79,20 +79,3 @@ class CollectionFormViewController: UIViewController {
         view.endEditing(true)
     }
 }
-
-extension CollectionFormViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return flashcardsList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let word = flashcardsList[indexPath.row].word
-        let translation = flashcardsList[indexPath.row].translation
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.CustomCells.reusableWordTranslationCell, for: indexPath) as! WordTranslationCell
-        cell.wordLabel.text = word
-        cell.translationLabel.text = translation
-        return cell
-    }
-}

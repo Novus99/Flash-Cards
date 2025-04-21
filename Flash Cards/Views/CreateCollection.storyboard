@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection Creation View Controller-->
+        <!--Collection Form View Controller-->
         <scene sceneID="HE2-Om-VhU">
             <objects>
-                <viewController id="o8D-WP-Phl" customClass="CollectionCreationViewController" customModule="Flash_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o8D-WP-Phl" customClass="CollectionFormViewController" customModule="Flash_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d2e-K3-P2S">
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
