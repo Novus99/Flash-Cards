@@ -21,11 +21,16 @@ class CollectionFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        wordTableView.dataSource = self
-        wordTableView.register(UINib(nibName: K.CustomCells.wordTranslationCell, bundle: nil), forCellReuseIdentifier: K.CustomCells.reusableWordTranslationCell)
+        setupTableView()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
             view.addGestureRecognizer(tapGesture)
         	
+    }
+    
+    private func setupTableView() {
+        wordTableView.dataSource = self
+        wordTableView.delegate = self
+        wordTableView.register(UINib(nibName: K.CustomCells.wordTranslationCell, bundle: nil), forCellReuseIdentifier: K.CustomCells.reusableWordTranslationCell)
     }
     
     @IBAction func addWordPressed(_ sender: UIButton) {
@@ -77,5 +82,14 @@ class CollectionFormViewController: UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+     func removeFlashcard(at index: Int) {
+        guard index < flashcardsList.count else {
+            print("Próba usunięcia flashcard spoza zakresu")
+            return
+        }
+        flashcardsList.remove(at: index)
+        wordTableView.reloadData()
     }
 }
