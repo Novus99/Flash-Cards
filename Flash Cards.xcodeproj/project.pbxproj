@@ -26,7 +26,9 @@
 		772CEBEB2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEBEA2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift */; };
 		772CEBED2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEBEC2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift */; };
 		772CEC062DB6863900583C2B /* CollectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEC032DB6863900583C2B /* CollectionFormViewController.swift */; };
-		772CEC072DB6863900583C2B /* CollectionFormViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEC042DB6863900583C2B /* CollectionFormViewController+TableView.swift */; };
+		772CEC072DB6863900583C2B /* CollectionFormViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEC042DB6863900583C2B /* CollectionFormViewController+TableViewDataSource.swift */; };
+		772CEC152DB68B7800583C2B /* CollectionFormViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEC142DB68B7800583C2B /* CollectionFormViewController+TableViewDelegate.swift */; };
+		772CEC172DB68E3C00583C2B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 772CEC162DB68E3200583C2B /* .gitignore */; };
 		7755E1022D9311A400FF1A89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1012D9311A400FF1A89 /* Login.storyboard */; };
 		7755E1042D93122900FF1A89 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1032D93122900FF1A89 /* Register.storyboard */; };
 		7755E1062D9312BA00FF1A89 /* Wellcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */; };
@@ -88,7 +90,9 @@
 		772CEBEA2DB66C0E00583C2B /* CollectionsViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionsViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		772CEBEC2DB66C4400583C2B /* CollectionsViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionsViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		772CEC032DB6863900583C2B /* CollectionFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFormViewController.swift; sourceTree = "<group>"; };
-		772CEC042DB6863900583C2B /* CollectionFormViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionFormViewController+TableView.swift"; sourceTree = "<group>"; };
+		772CEC042DB6863900583C2B /* CollectionFormViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionFormViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		772CEC142DB68B7800583C2B /* CollectionFormViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionFormViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		772CEC162DB68E3200583C2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7755E1012D9311A400FF1A89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		7755E1032D93122900FF1A89 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		7755E1052D9312BA00FF1A89 /* Wellcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wellcome.storyboard; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		7728FBBA2D8CCDFC008B1EAA = {
 			isa = PBXGroup;
 			children = (
+				772CEC162DB68E3200583C2B /* .gitignore */,
 				7728FC162D8CD2A7008B1EAA /* Flash Cards */,
 				7728FBDC2D8CCDFE008B1EAA /* Flash CardsTests */,
 				7728FBE62D8CCDFE008B1EAA /* Flash CardsUITests */,
@@ -261,7 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				772CEC032DB6863900583C2B /* CollectionFormViewController.swift */,
-				772CEC042DB6863900583C2B /* CollectionFormViewController+TableView.swift */,
+				772CEC042DB6863900583C2B /* CollectionFormViewController+TableViewDataSource.swift */,
+				772CEC142DB68B7800583C2B /* CollectionFormViewController+TableViewDelegate.swift */,
 			);
 			path = CollectionForm;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772CEC172DB68E3C00583C2B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,12 +441,13 @@
 				77E4F7F92D90340700520DA0 /* CLTypingLabel.swift in Sources */,
 				77E4F7FB2D9036E200520DA0 /* RoundedButton.swift in Sources */,
 				7728FC172D8CD2A7008B1EAA /* AppDelegate.swift in Sources */,
+				772CEC152DB68B7800583C2B /* CollectionFormViewController+TableViewDelegate.swift in Sources */,
 				7728FC182D8CD2A7008B1EAA /* LoginViewController.swift in Sources */,
 				7755E11C2D96E0AF00FF1A89 /* WordTranslationCell.swift in Sources */,
 				7728FC192D8CD2A7008B1EAA /* RegisterViewController.swift in Sources */,
 				7728FC212D8CD2D3008B1EAA /* MainViewController.swift in Sources */,
 				772CEC062DB6863900583C2B /* CollectionFormViewController.swift in Sources */,
-				772CEC072DB6863900583C2B /* CollectionFormViewController+TableView.swift in Sources */,
+				772CEC072DB6863900583C2B /* CollectionFormViewController+TableViewDataSource.swift in Sources */,
 				77E4F83C2D91D05700520DA0 /* Flashcard.swift in Sources */,
 				7728FC2A2D8D77AE008B1EAA /* Constants.swift in Sources */,
 				7728FC1A2D8CD2A7008B1EAA /* SceneDelegate.swift in Sources */,
