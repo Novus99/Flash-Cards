@@ -12,7 +12,8 @@ struct K {
     struct Navigation {
         static let registerSegue = "RegisterToHome"
         static let loginSegue = "LoginToHome"
-        static let createCollectiontoCollectionsSegue = "CreateCollectionToCollections"
+        static let collectionsToCollectionFormSegue = "CollectionsToCollectionForm"
+        static let collectionFormToCollectionSegue = "CollectionFormToCollection"
     }
     
     struct CustomCells {

@@ -146,7 +146,7 @@
                         <outlet property="translationTextField" destination="J3h-gc-csY" id="Bif-Hn-bet"/>
                         <outlet property="wordTableView" destination="M6p-eB-Zjt" id="KYs-75-aRz"/>
                         <outlet property="wordTextField" destination="kXK-Dj-9a2" id="3GN-UF-DpZ"/>
-                        <segue destination="IbO-Hf-e6F" kind="show" identifier="CreateCollectionToCollections" id="mah-uH-wlv"/>
+                        <segue destination="IbO-Hf-e6F" kind="show" identifier="CollectionFormToCollection" id="mah-uH-wlv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1T-EK-IvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

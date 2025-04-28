@@ -11,7 +11,7 @@ extension CollectionsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let editAction = UIContextualAction(style: .normal, title: "Edit") { _, _, completion in
-            print("Edit tapped for index \(indexPath.row)")
+            self.editCollection(at: indexPath)
             completion(true)
         }
         editAction.backgroundColor = .orange

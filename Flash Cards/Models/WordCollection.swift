@@ -8,7 +8,7 @@ import Foundation
 
 struct WordCollection: Codable{
     
-    let id: UUID
+    var id: UUID
     let owner: String?
     let title: String
     let createdAt: Double?
