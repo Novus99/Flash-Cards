@@ -17,20 +17,50 @@ class CollectionFormViewController: UIViewController {
     
     var flashcardsList : [Flashcard] = []
     
+    var isEditMode : Bool = false
+    var collectionToEdit: WordCollection?
+    var collectionToEditID: UUID?
+    
+    
     let db = Firestore.firestore()
+    private let service = CollectionsService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        print("Is in edit mode: \(isEditMode)")
+        print("Editting collection: \(collectionToEdit?.title ?? "No collection")")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-            view.addGestureRecognizer(tapGesture)
-        	
+        view.addGestureRecognizer(tapGesture)
+        loadCollectionContentIfEditing()
+        
     }
     
     private func setupTableView() {
         wordTableView.dataSource = self
         wordTableView.delegate = self
         wordTableView.register(UINib(nibName: K.CustomCells.wordTranslationCell, bundle: nil), forCellReuseIdentifier: K.CustomCells.reusableWordTranslationCell)
+    }
+    
+    private func loadCollectionContentIfEditing() {
+        if isEditMode == false {
+            return
+        }
+        
+        if let collectionToEdit = collectionToEdit {
+            service.fetchCollectionData(id: collectionToEdit.id) { collection in
+                if let collection = collection {
+                    print("Załadowano kolekcję: \(collection)")
+                    self.collectionNameTextField.text = collection.title
+                    self.flashcardsList = collection.words!
+                    self.wordTableView.reloadData()
+                    self.collectionToEditID = collection.id
+                    
+                } else {
+                    print("Nie udało się załadować kolekcji.")
+                }
+            }
+        }
     }
     
     @IBAction func addWordPressed(_ sender: UIButton) {
@@ -48,32 +78,45 @@ class CollectionFormViewController: UIViewController {
     
     @IBAction func saveCollectionPressed(_ sender: UIButton) {
         guard let collectionName = collectionNameTextField.text, !collectionName.isEmpty else {
-               print("Collection name cannt be empty")
-               return
-           }
-           
-           guard !flashcardsList.isEmpty else {
-               print("Add some flashcards first!")
-               return
-           }
-           
-           let newWordCollection = WordCollection(
-               id: UUID(),
-               owner: (Auth.auth().currentUser?.email)!,
-               title: collectionName,
-               createdAt: Date().timeIntervalSince1970,
-               words: flashcardsList
-           )
-        print(newWordCollection)
-        do {
-            try db.collection("\(Auth.auth().currentUser!.email!)").document(newWordCollection.id.uuidString)
-                .setData(from: newWordCollection)
-            print("Document added succesfully!")
-            performSegue(withIdentifier: K.Navigation.createCollectiontoCollectionsSegue, sender: self)
-        }   catch {
-            print("Error while adding document: \(error)")
+            print("Collection name cannt be empty")
+            return
         }
-       }
+        
+        guard !flashcardsList.isEmpty else {
+            print("Add some flashcards first!")
+            return
+        }
+        
+        var newWordCollection = WordCollection(
+            id: UUID(),
+            owner: (Auth.auth().currentUser?.email)!,
+            title: collectionName,
+            createdAt: Date().timeIntervalSince1970,
+            words: flashcardsList
+        )
+        print(newWordCollection)
+        if isEditMode == true{
+            do {
+                newWordCollection.id = collectionToEditID!
+                try db.collection("\(Auth.auth().currentUser!.email!)").document(collectionToEditID!.uuidString)
+                    .setData(from: newWordCollection)
+                print("Document added succesfully!")
+                performSegue(withIdentifier: K.Navigation.collectionFormToCollectionSegue, sender: self)
+            }catch {
+                print("Error while adding document: \(error)")
+            }
+        }
+        else{
+            do {
+                try db.collection("\(Auth.auth().currentUser!.email!)").document(newWordCollection.id.uuidString)
+                    .setData(from: newWordCollection)
+                print("Document added succesfully!")
+                performSegue(withIdentifier: K.Navigation.collectionFormToCollectionSegue, sender: self)
+            }   catch {
+                print("Error while adding document: \(error)")
+            }
+        }
+    }
     
     func setTextFieldsBlank(){
         wordTextField.text = ""
@@ -84,7 +127,7 @@ class CollectionFormViewController: UIViewController {
         view.endEditing(true)
     }
     
-     func removeFlashcard(at index: Int) {
+    func removeFlashcard(at index: Int) {
         guard index < flashcardsList.count else {
             print("Próba usunięcia flashcard spoza zakresu")
             return
@@ -92,4 +135,5 @@ class CollectionFormViewController: UIViewController {
         flashcardsList.remove(at: index)
         wordTableView.reloadData()
     }
+    
 }

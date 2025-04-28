@@ -47,7 +47,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Mpx-2z-la0" kind="show" identifier="CreateCollectionToCollections" id="Yv6-Oe-ttv"/>
+                                    <action selector="createCollectionPressed:" destination="UNn-9t-7GL" eventType="touchUpInside" id="9bJ-oY-EE7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,6 +71,7 @@
                     <tabBarItem key="tabBarItem" title="Collections" image="plus" catalog="system" id="3E2-Nj-7nb"/>
                     <connections>
                         <outlet property="collectionsTableView" destination="PfI-6a-9vo" id="kbQ-t2-aOj"/>
+                        <segue destination="Mpx-2z-la0" kind="show" identifier="CollectionsToCollectionForm" id="i8P-re-GzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYX-Jq-Wah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,13 +8,21 @@ class CollectionsViewController: UIViewController {
 
     private let service = CollectionsService()
     var collections: [WordCollection] = []
+    var isEditingCollection = false
+    var selectedCollectionForEdit: WordCollection?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         loadCollections()
     }
-
+    
+    @IBAction func createCollectionPressed(_ sender: Any) {
+        isEditingCollection = false
+        selectedCollectionForEdit = nil
+        performSegue(withIdentifier: K.Navigation.collectionsToCollectionFormSegue, sender: self)
+    }
+    
     private func setupTableView() {
         collectionsTableView.delegate = self
         collectionsTableView.dataSource = self
@@ -70,4 +78,21 @@ class CollectionsViewController: UIViewController {
             }
         }
     }
+    
+    func editCollection(at indexPath: IndexPath) {
+        let collection = collections[indexPath.row].title
+        print("User is trying to edit collection \(collection)")
+        isEditingCollection = true
+        selectedCollectionForEdit = collections[indexPath.row]
+        performSegue(withIdentifier: K.Navigation.collectionsToCollectionFormSegue, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == K.Navigation.collectionsToCollectionFormSegue,
+           let destVC = segue.destination as? CollectionFormViewController {
+            destVC.isEditMode = isEditingCollection
+            destVC.collectionToEdit = selectedCollectionForEdit
+        }
+    }
 }
+    
